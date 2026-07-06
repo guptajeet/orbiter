@@ -1,0 +1,5 @@
+schedules:
+  job_discovery: 7200.0       # Every 2 hours
+  email_monitoring: 300.0      # Every 5 minutes
+  followup_check: 3600.0       # Every 1 hour
+  daily_digest: 86400.0        # Every 24 hours

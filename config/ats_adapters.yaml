@@ -1,0 +1,30 @@
+adapters:
+  greenhouse:
+    enabled: true
+    adapter_class: "backend.adapters.greenhouse.GreenhouseAdapter"
+    auth_type: "api_key"
+    features: ["api_submit", "status_check"]
+
+  lever:
+    enabled: true
+    adapter_class: "backend.adapters.lever.LeverAdapter"
+    auth_type: "api_key"
+    features: ["api_submit", "status_check"]
+
+  ashby:
+    enabled: true
+    adapter_class: "backend.adapters.ashby.AshbyAdapter"
+    auth_type: "api_key"
+    features: ["api_submit"]
+
+  workday:
+    enabled: true
+    adapter_class: "backend.adapters.workday.WorkdayAdapter"
+    auth_type: "browser_session"
+    features: ["browser_submit"]
+
+  email:
+    enabled: true
+    adapter_class: "backend.adapters.generic_email.GenericEmailAdapter"
+    auth_type: "smtp"
+    features: ["email_submit"]

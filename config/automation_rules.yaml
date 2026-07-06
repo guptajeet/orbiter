@@ -1,0 +1,29 @@
+automation_mode: "copilot"  # advisor | copilot | autopilot
+
+mode_config:
+  advisor:
+    discover: true
+    score: true
+    compose: false
+    submit: false
+    outreach: false
+
+  copilot:
+    discover: true
+    score: true
+    compose: true
+    submit: false
+    outreach: false
+
+  autopilot:
+    discover: true
+    score: true
+    compose: true
+    submit: true
+    outreach: true
+    confidence_threshold: 0.80
+    daily_cap: 25
+
+agent_overrides:
+  outreach_agent:
+    mode: "copilot"

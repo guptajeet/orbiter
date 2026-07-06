@@ -1,0 +1,15 @@
+version: 1.0
+
+system:
+  database_url: "sqlite:///./orbiter.db"
+  redis_url: "redis://localhost:6379/0"
+  log_level: "INFO"
+
+limits:
+  daily_application_cap: 25
+  max_retries: 3
+  dedup_similarity_threshold: 0.95
+
+paths:
+  prompts_dir: "../prompts"
+  memory_db: "./memory_chroma"

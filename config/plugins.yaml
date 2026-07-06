@@ -1,0 +1,42 @@
+plugins:
+  sources:
+    - name: "adzuna"
+      module: "plugins.sources.adzuna"
+      enabled: true
+      priority: 1
+    - name: "remotive"
+      module: "plugins.sources.remotive"
+      enabled: true
+      priority: 2
+    - name: "custom_rss"
+      module: "plugins.sources.custom_rss"
+      enabled: true
+      priority: 3
+
+  providers:
+    - name: "gemini"
+      module: "plugins.providers.gemini"
+      enabled: true
+    - name: "groq"
+      module: "plugins.providers.groq"
+      enabled: true
+    - name: "huggingface"
+      module: "plugins.providers.huggingface"
+      enabled: true
+    - name: "cerebras"
+      module: "plugins.providers.cerebras"
+      enabled: true
+    - name: "mistral"
+      module: "plugins.providers.mistral"
+      enabled: true
+    - name: "deepseek"
+      module: "plugins.providers.deepseek"
+      enabled: true
+
+  channels:
+    - name: "gmail"
+      module: "plugins.channels.gmail"
+      enabled: true
+    - name: "smtp_generic"
+      module: "plugins.channels.smtp_generic"
+      enabled: true

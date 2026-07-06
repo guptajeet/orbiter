@@ -1,0 +1,62 @@
+providers:
+  gemini:
+    enabled: true
+    models:
+      - name: "gemini-3.5-flash"
+        capabilities: ["generate", "classify"]
+      - name: "text-embedding-004"
+        capabilities: ["embed"]
+    rate_limit:
+      requests_per_minute: 15
+      requests_per_day: 1500
+
+  groq:
+    enabled: true
+    models:
+      - name: "llama-3.1-8b-instant"
+        capabilities: ["generate", "classify"]
+    rate_limit:
+      requests_per_minute: 30
+      requests_per_day: 14400
+
+  deepseek:
+    enabled: true
+    models:
+      - name: "deepseek-v4-flash"
+        capabilities: ["generate", "classify"]
+    rate_limit:
+      requests_per_minute: 30
+      requests_per_day: 5000
+
+  huggingface:
+    enabled: true
+    models:
+      - name: "all-MiniLM-L6-v2"
+        capabilities: ["embed"]
+    rate_limit:
+      requests_per_minute: 10
+
+functions:
+  resume_parsing:
+    primary: "groq"
+    backups: ["deepseek", "gemini"]
+  
+  embedding:
+    primary: "gemini"
+    backups: []
+
+  match_scoring:
+    primary: "groq"
+    backups: ["deepseek", "gemini"]
+
+  resume_tailoring:
+    primary: "groq"
+    backups: ["deepseek", "gemini"]
+    
+  cover_letter:
+    primary: "groq"
+    backups: ["deepseek", "gemini"]
+
+  email_composition:
+    primary: "groq"
+    backups: ["deepseek", "gemini"]

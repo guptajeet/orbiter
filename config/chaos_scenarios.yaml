@@ -1,0 +1,18 @@
+scenarios:
+  api_provider_down:
+    target: "gemini"
+    action: "raise_exception"
+    duration_seconds: 300
+    severity: "high"
+  
+  api_rate_limited:
+    target: "groq"
+    action: "simulate_429"
+    duration_seconds: 60
+    severity: "medium"
+
+  redis_outage:
+    target: "event_bus"
+    action: "drop_connection"
+    duration_seconds: 120
+    severity: "critical"

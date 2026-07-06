@@ -1,0 +1,14 @@
+sources:
+  adzuna:
+    enabled: true
+    priority: 1
+    config:
+      country: "us"
+  jsearch:
+    enabled: true
+    priority: 2
+    config: {}
+  remotive:
+    enabled: true
+    priority: 3
+    config: {}

@@ -1,0 +1,57 @@
+taxonomy:
+  backend_engineering:
+    titles:
+      - "backend engineer"
+      - "software engineer"
+      - "platform engineer"
+      - "systems engineer"
+      - "backend developer"
+      - "infrastructure engineer"
+    skills:
+      - "python"
+      - "go"
+      - "rust"
+      - "java"
+      - "fastapi"
+      - "django"
+      - "redis"
+      - "postgresql"
+      - "docker"
+      - "kubernetes"
+      - "aws"
+      - "gcp"
+      - "celery"
+
+  frontend_engineering:
+    titles:
+      - "frontend engineer"
+      - "react developer"
+      - "ui engineer"
+      - "frontend developer"
+      - "web developer"
+    skills:
+      - "javascript"
+      - "typescript"
+      - "react"
+      - "vue"
+      - "next.js"
+      - "tailwind"
+      - "css"
+      - "html"
+      - "webpack"
+
+  data_science:
+    titles:
+      - "data scientist"
+      - "machine learning engineer"
+      - "ai engineer"
+      - "data analyst"
+    skills:
+      - "pandas"
+      - "numpy"
+      - "scikit-learn"
+      - "pytorch"
+      - "tensorflow"
+      - "sql"
+      - "jupyter"
+      - "transformers"

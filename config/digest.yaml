@@ -1,0 +1,8 @@
+digest:
+  enabled: true
+  send_time: "18:00"              # Send daily digest at 6 PM
+  recipient: "user@example.com"   # Replaced dynamically or fallback
+  subject_template: "Orbiter Mission Control - Daily Digest ({{ date }})"
+  max_recommendations: 10         # Max job recommendation count in digest
+  include_stats: true             # Include matching statistics
+  include_crm_updates: true       # Include pending CRM tasks
