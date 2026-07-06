@@ -18,8 +18,9 @@ The platform uses a hierarchical multi-agent framework:
 
 ### Prerequisites
 - Docker & Docker Compose
-- Python 3.11+ (if running locally without Docker)
-- Node.js & npm (if running frontend locally)
+- Python 3.13+ (if running locally without Docker)
+- Node.js 18+ & npm (if running frontend locally)
+- Redis 5.0+ (bundled in `redis/` folder for Windows)
 
 ### Configuration
 1. Copy the environment template:
